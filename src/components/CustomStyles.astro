@@ -25,14 +25,14 @@ import '@fontsource-variable/inter';
     --aw-font-serif: 'InterVariable';
     --aw-font-heading: 'InterVariable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: hsl(225, 100%, 75%); /* Blue */
+    --aw-color-secondary: hsl(326, 100%, 74%); /* Pink */
+    --aw-color-accent: hsl(265, 89%, 78%); /* Purple */
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    --aw-color-text-heading: rgb(76, 79, 105); /* Text */
+    --aw-color-text-default: rgb(92, 95, 119); /* Subtext1 */
+    --aw-color-text-muted: rgba(92, 95, 119, 0.66); /* Subtext0 */
+    --aw-color-bg-page: rgb(239, 241, 245); /* Base */
 
     --aw-color-bg-page-dark: rgb(3 6 32);
 
@@ -55,30 +55,9 @@ import '@fontsource-variable/inter';
     --aw-color-text-muted: rgb(229, 236, 246, 0.66); /* Muted text */
     --aw-color-bg-page: rgb(40, 42, 54); /* Background */
 
-    --aw-color-bg-page-dark: rgb(40, 42, 54); /* Consistent dark background */
-
     ::selection {
-      background-color: rgb(68, 71, 90); /* Current Line Color */
-      color: rgb(248, 248, 242); /* Foreground Color */
-    }
-
-    .light {
-      --aw-font-sans: 'InterVariable';
-      --aw-font-serif: 'InterVariable';
-      --aw-font-heading: 'InterVariable';
-
-      --aw-color-primary: hsl(225, 100%, 75%); /* Blue */
-      --aw-color-secondary: hsl(326, 100%, 74%); /* Pink */
-      --aw-color-accent: hsl(265, 89%, 78%); /* Purple */
-
-      --aw-color-text-heading: rgb(76, 79, 105); /* Text */
-      --aw-color-text-default: rgb(92, 95, 119); /* Subtext1 */
-      --aw-color-text-muted: rgba(92, 95, 119, 0.66); /* Subtext0 */
-      --aw-color-bg-page: rgb(239, 241, 245); /* Base */
-      ::selection {
-        background-color: hsl(31, 100%, 71%); /* Orange */
-        color: rgb(76, 79, 105); /* Text */
-      }
+      background-color: black;
+      color: snow;
     }
   }
 </style>
