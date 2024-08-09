@@ -21,129 +21,78 @@ import '@fontsource-variable/inter';
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'InterVariable';
-    --aw-font-serif: 'InterVariable';
-    --aw-font-heading: 'InterVariable';
+    /* Base Fonts */
+    --aw-font-sans: 'IBM Plex Sans';
+    --aw-font-serif: 'IBM Plex Sans';
+    --aw-font-heading: 'IBM Plex Sans';
 
-    /* Static Palette Colors */
-    --aw-color-foreground: hsl(60, 30%, 96%); /* #f8f8f2 */
-    --aw-color-red: hsl(0, 100%, 67%);        /* #ff5555 */
-    --aw-color-orange: hsl(31, 100%, 71%);    /* #ffb86c */
-    --aw-color-yellow: hsl(65, 92%, 76%);     /* #f1fa8c */
-    --aw-color-green: hsl(135, 94%, 65%);     /* #50fa7b */
-    --aw-color-cyan: hsl(191, 97%, 77%);      /* #8be9fd */
-    --aw-color-blue: hsl(225, 100%, 75%);     /* #809fff */
-    --aw-color-pink: hsl(326, 100%, 74%);     /* #ff79c6 */
-    --aw-color-purple: hsl(265, 89%, 78%);    /* #bd93f9 */
+    /* Primary Theme Colors */
+    --aw-color-primary: rgb(1 97 239);
+    --aw-color-secondary: rgb(1 84 207);
+    --aw-color-accent: rgb(109 40 217);
 
-    /* Variant-specific Colors */
-    --aw-color-background: hsl(231, 15%, 18%); /* #282a36 */
-    --aw-color-selection: color(var(--aw-color-background)); /* #414458 */
-    --aw-color-comment: color(var(--aw-color-blue)); /* #6272a4 */
-    --aw-color-line-highlight: color(var(--aw-color-background)); /* #414458 */
-    --aw-color-accent: var(--aw-color-blue);
-
-    /* UI Elements */
-    --aw-color-caret: var(--aw-color-foreground);
+    /* Light Theme Colors */
+    --aw-color-bg-page: hsl(231, 15%, 18%); /* #282a36 */
+    --aw-color-current-line: hsl(231, 25%, 25%); /* Similar to #44475a */
+    --aw-color-selection: hsl(231, 15%, 30%); /* Similar to #44475a */
+    --aw-color-text-heading: hsl(60, 30%, 96%); /* #f8f8f2 */
+    --aw-color-text-default: hsl(60, 30%, 96%); /* #f8f8f2 */
+    --aw-color-text-muted: hsl(225, 27%, 51%); /* #6272a4 */
+    --aw-color-cyan: hsl(191, 97%, 77%); /* #8be9fd */
+    --aw-color-green: hsl(135, 94%, 65%); /* #50fa7b */
+    --aw-color-orange: hsl(31, 100%, 71%); /* #ffb86c */
+    --aw-color-pink: hsl(326, 100%, 74%); /* #ff79c6 */
+    --aw-color-purple: hsl(265, 89%, 78%); /* #bd93f9 */
+    --aw-color-red: hsl(0, 100%, 67%); /* #ff5555 */
+    --aw-color-yellow: hsl(65, 92%, 76%); /* #f1fa8c */
+    --aw-color-caret: var(--aw-color-text-heading);
     --aw-color-block-caret: var(--aw-color-caret);
     --aw-color-highlight: var(--aw-color-yellow);
     --aw-color-shadow: hsl(0, 0%, 0%);
-    --aw-color-stack: color(var(--aw-color-comment));
+    --aw-color-stack: hsl(var(--aw-color-text-muted), 100%, 75%);
     --aw-color-darken: hsl(0, 0%, 13%);
 
-    /* Sublime-specific Colors */
+    /* Colorish values for extra coloring */
     --redish: var(--aw-color-red);
     --orangeish: var(--aw-color-orange);
     --yellowish: var(--aw-color-yellow);
     --greenish: var(--aw-color-green);
     --cyanish: var(--aw-color-cyan);
-    --bluish: var(--aw-color-blue);
+    --bluish: var(--aw-color-accent);
     --pinkish: var(--aw-color-pink);
     --purplish: var(--aw-color-purple);
 
     ::selection {
-      background-color: lavender;
+      background-color: hsl(231, 15%, 80%); /* Light gray for selection */
+      color: hsl(231, 15%, 10%); /* Dark text for contrast */
     }
   }
 
   .dark {
-    --aw-color-bg-page: var(--aw-color-background); /* Background */
-    --aw-color-current-line: var(--aw-color-line-highlight); /* Current Line */
-    --aw-color-selection: var(--aw-color-selection); /* Selection */
-
-    --aw-color-text-heading: var(--aw-color-foreground); /* Foreground */
-    --aw-color-text-default: var(--aw-color-foreground); /* Foreground */
-    --aw-color-text-muted: var(--aw-color-comment); /* Comment */
-
-    --aw-color-primary: var(--aw-color-cyan); /* Cyan */
-    --aw-color-secondary: var(--aw-color-green); /* Green */
-    --aw-color-accent: var(--aw-color-purple); /* Purple */
-
-    --aw-color-red: var(--aw-color-red); /* Red */
-    --aw-color-orange: var(--aw-color-orange); /* Orange */
-    --aw-color-pink: var(--aw-color-pink); /* Pink */
-    --aw-color-yellow: var(--aw-color-yellow); /* Yellow */
+    /* Dark Theme Colors */
+    --aw-color-bg-page: hsl(231, 15%, 18%); /* #282a36 */
+    --aw-color-current-line: hsl(232, 14%, 31%); /* #44475a */
+    --aw-color-selection: hsl(232, 14%, 31%); /* #44475a */
+    --aw-color-text-heading: hsl(60, 30%, 96%); /* #f8f8f2 */
+    --aw-color-text-default: hsl(60, 30%, 96%); /* #f8f8f2 */
+    --aw-color-text-muted: hsl(225, 27%, 51%); /* #6272a4 */
+    --aw-color-cyan: hsl(191, 97%, 77%); /* #8be9fd */
+    --aw-color-green: hsl(135, 94%, 65%); /* #50fa7b */
+    --aw-color-orange: hsl(31, 100%, 71%); /* #ffb86c */
+    --aw-color-pink: hsl(326, 100%, 74%); /* #ff79c6 */
+    --aw-color-purple: hsl(265, 89%, 78%); /* #bd93f9 */
+    --aw-color-red: hsl(0, 100%, 67%); /* #ff5555 */
+    --aw-color-yellow: hsl(65, 92%, 76%); /* #f1fa8c */
+    --aw-color-caret: var(--aw-color-text-heading);
+    --aw-color-block-caret: var(--aw-color-caret);
+    --aw-color-highlight: var(--aw-color-yellow);
+    --aw-color-shadow: hsl(0, 0%, 0%);
+    --aw-color-stack: hsl(var(--aw-color-text-muted), 100%, 75%);
+    --aw-color-darken: hsl(0, 0%, 13%);
 
     ::selection {
       background-color: var(--aw-color-selection); /* Selection */
       color: snow;
     }
-  }
-
-  .light {
-    /* Light Theme Colors */
-    --aw-color-bg-page: hsl(0, 0%, 100%); /* White Background */
-    --aw-color-current-line: hsl(231, 15%, 92%); /* Light gray for current line */
-    --aw-color-selection: hsl(231, 15%, 80%); /* Light gray for selection */
-
-    --aw-color-text-heading: hsl(231, 15%, 10%); /* Dark text */
-    --aw-color-text-default: hsl(231, 15%, 15%); /* Slightly lighter dark text */
-    --aw-color-text-muted: hsl(231, 15%, 30%); /* Muted text */
-
-    --aw-color-primary: hsl(191, 97%, 77%); /* Cyan */
-    --aw-color-secondary: hsl(135, 94%, 65%); /* Green */
-    --aw-color-accent: hsl(265, 89%, 78%); /* Purple */
-
-    --aw-color-red: hsl(0, 100%, 67%); /* Red */
-    --aw-color-orange: hsl(31, 100%, 71%); /* Orange */
-    --aw-color-pink: hsl(326, 100%, 74%); /* Pink */
-    --aw-color-yellow: hsl(65, 92%, 76%); /* Yellow */
-
-    ::selection {
-      background-color: hsl(231, 15%, 80%); /* Selection */
-      color: hsl(231, 15%, 10%); /* Dark text for contrast */
-    }
-  }
-
-  .btn {
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  /* Dark theme button */
-  .dark .btn {
-    background-color: var(--aw-color-primary);
-    color: var(--aw-color-bg-page);
-  }
-
-  .dark .btn:hover {
-    background-color: var(--aw-color-secondary);
-    color: var(--aw-color-bg-page);
-  }
-
-  /* Light theme button */
-  .light .btn {
-    background-color: var(--aw-color-primary);
-    color: var(--aw-color-bg-page);
-  }
-
-  .light .btn:hover {
-    background-color: var(--aw-color-secondary);
-    color: var(--aw-color-bg-page);
   }
 </style>
