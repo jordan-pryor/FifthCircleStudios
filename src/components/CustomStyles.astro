@@ -21,9 +21,9 @@ import '@fontsource-variable/inter';
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'IBM Plex Sans';
-    --aw-font-serif: 'IBM Plex Sans';
-    --aw-font-heading: 'IBM Plex Sans';
+    --aw-font-sans: 'InterVariable';
+    --aw-font-serif: 'InterVariable';
+    --aw-font-heading: 'InterVariable';
 
     /* Static Palette Colors */
     --aw-color-foreground: hsl(60, 30%, 96%); /* #f8f8f2 */
@@ -113,5 +113,37 @@ import '@fontsource-variable/inter';
       background-color: hsl(231, 15%, 80%); /* Selection */
       color: hsl(231, 15%, 10%); /* Dark text for contrast */
     }
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Dark theme button */
+  .dark .btn {
+    background-color: var(--aw-color-primary);
+    color: var(--aw-color-bg-page);
+  }
+
+  .dark .btn:hover {
+    background-color: var(--aw-color-secondary);
+    color: var(--aw-color-bg-page);
+  }
+
+  /* Light theme button */
+  .light .btn {
+    background-color: var(--aw-color-primary);
+    color: var(--aw-color-bg-page);
+  }
+
+  .light .btn:hover {
+    background-color: var(--aw-color-secondary);
+    color: var(--aw-color-bg-page);
   }
 </style>
