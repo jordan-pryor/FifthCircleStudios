@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Fifth Circle Studios
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
