@@ -44,12 +44,8 @@ export const headerData = {
       text: 'Blog',
       links: [
         {
-          text: 'Developer logs',
+          text: 'Developer Blog',
           href: getBlogPermalink(),
-        },
-        {
-          text: 'Articles',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
           text: 'Categories',
