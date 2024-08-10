@@ -39,12 +39,8 @@ export const headerData = {
           href: getPermalink('/contact'),
         },
         {
-          text: 'Terms',
+          text: 'Terms & Privacy policy',
           href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
         },
       ],
     },
