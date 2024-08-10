@@ -6,11 +6,11 @@ export const headerData = {
       text: 'Homes',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'About Us',
+          href: getPermalink('/about'),
         },
         {
-          text: 'Startup',
+          text: 'Steam ',
           href: getPermalink('/homes/startup'),
         },
         {
@@ -40,7 +40,7 @@ export const headerData = {
         },
         {
           text: 'About us',
-          href: getPermalink('/about'),
+         
         },
         {
           text: 'Contact',
