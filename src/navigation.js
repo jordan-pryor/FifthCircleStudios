@@ -14,33 +14,25 @@ export const headerData = {
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Jordans Portfolio',
+          href: getPermalink('https://jordanpryor.fifthcirclestudios.com/'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Projects',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Starlight',
+          href: getPermalink('https://starlight.fifthcirclestudios.com/'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'The Abyss',
+          href: getPermalink('https://github.com/FifthCircleStudios/The-Abyss'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-         
+          text: 'Coming Soon',
+          href: getPermalink('/404.astro'),
         },
         {
           text: 'Contact',
@@ -57,65 +49,23 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },
-    {
       text: 'Blog',
       links: [
         {
-          text: 'Blog List',
+          text: 'Developer logs',
           href: getBlogPermalink(),
         },
         {
-          text: 'Article',
+          text: 'Articles',
           href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
+          text: 'Categories',
           href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
